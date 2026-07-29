@@ -95,6 +95,43 @@
         flex-shrink: 0;
       }
 
+      /* ── "Sttt…" Hush Banner ── */
+      .hush-banner {
+        background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+        border: 2px dashed #e91e63;
+        border-radius: 12px;
+        padding: 22px 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+      }
+
+      .hush-banner .hush-icon {
+        font-size: 40px;
+        margin-bottom: 8px;
+        display: block;
+        animation: shh 1.2s ease-in-out infinite;
+      }
+
+      @keyframes shh {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+      }
+
+      .hush-banner h2 {
+        font-size: 18px;
+        color: #880e4f;
+        margin-bottom: 4px;
+        letter-spacing: 0.3px;
+      }
+
+      .hush-banner p {
+        font-size: 13px;
+        color: #ad1457;
+        margin: 0;
+        line-height: 1.6;
+      }
+
       .tips-card {
         background: #fff8e1;
         border-left: 4px solid #ff9800;
@@ -159,6 +196,16 @@
             <span><strong>Tidak ada verifikasi dua arah</strong> — Informasi sensitif seharusnya hanya diakses melalui portal resmi yang sudah dikenal.</span>
           </li>
         </ul>
+
+        <div class="hush-banner">
+          <span class="hush-icon">🤫</span>
+          <h2>Sttt… Jangan Kasih Tau Siapa-siapa Dulu Yaa!</h2>
+          <p>
+            Ini adalah simulasi phishing internal. Kalau kamu kasih tau rekan kerja yang lain,
+            kita nggak bisa mengukur seberapa banyak yang beneran aware. Jadi simpan dulu
+            informasi ini buat diri sendiri ya — biar hasil evaluasinya akurat! ✌️
+          </p>
+        </div>
 
         <div class="tips-card">
           <strong>🔐 Tips Melindungi Diri dari Phishing:</strong><br/>
