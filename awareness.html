@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="id"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Security Awareness</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f1f1f1;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .container {
+        max-width: 680px;
+        width: 100%;
+      }
+
+      /* ── Warning Banner ── */
+      .warn-banner {
+        background: linear-gradient(135deg, #b71c1c, #d32f2f);
+        border-radius: 16px 16px 0 0;
+        padding: 40px 32px;
+        text-align: center;
+        color: #fff;
+      }
+
+      .warn-banner .icon-wrap {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.15);
+        margin-bottom: 16px;
+        font-size: 36px;
+      }
+
+      .warn-banner h1 {
+        font-size: 24px;
+        margin-bottom: 6px;
+      }
+
+      .warn-banner p {
+        font-size: 14px;
+        opacity: 0.9;
+      }
+
+      /* ── Content Card ── */
+      .content-card {
+        background: #fff;
+        border-radius: 0 0 16px 16px;
+        padding: 32px 36px 28px;
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+      }
+
+      .section-title {
+        font-size: 16px;
+        color: #b71c1c;
+        margin-bottom: 14px;
+      }
+
+      .flag-list {
+        list-style: none;
+        margin-bottom: 24px;
+      }
+
+      .flag-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 12px;
+        font-size: 14px;
+        color: #444;
+        line-height: 1.7;
+      }
+
+      .flag-list li i {
+        color: #d32f2f;
+        font-size: 15px;
+        margin-top: 2px;
+        flex-shrink: 0;
+      }
+
+      .tips-card {
+        background: #fff8e1;
+        border-left: 4px solid #ff9800;
+        border-radius: 6px;
+        padding: 16px 20px;
+        font-size: 13px;
+        color: #666;
+        line-height: 1.9;
+        margin-bottom: 8px;
+      }
+
+      .tips-card strong {
+        color: #e65100;
+      }
+
+      .footnote {
+        text-align: center;
+        color: #aaa;
+        font-size: 12px;
+        margin-top: 28px;
+      }
+
+      @media (max-width: 600px) {
+        .warn-banner { padding: 28px 20px; }
+        .content-card { padding: 24px 20px; }
+        .warn-banner h1 { font-size: 20px; }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="warn-banner">
+        <div class="icon-wrap">
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <h1>⚠️ Anda Terkena Simulasi Phishing</h1>
+        <p>Halaman ini adalah bagian dari program keamanan siber internal</p>
+      </div>
+
+      <div class="content-card">
+
+        <h3 class="section-title">🚩 Red Flags yang Seharusnya Anda Sadari:</h3>
+
+        <ul class="flag-list">
+          <li>
+            <i class="fas fa-times-circle"></i>
+            <span><strong>Domain tidak resmi</strong> — URL halaman ini bukan berasal dari domain internal perusahaan.</span>
+          </li>
+          <li>
+            <i class="fas fa-times-circle"></i>
+            <span><strong>Permintaan kredensial</strong> — Tidak ada proses HR yang sah meminta password melalui tautan dari email.</span>
+          </li>
+          <li>
+            <i class="fas fa-times-circle"></i>
+            <span><strong>Urgensi &amp; rasa penasaran</strong> — Pelaku phishing sering memancing emosi agar korban bertindak tanpa berpikir panjang.</span>
+          </li>
+          <li>
+            <i class="fas fa-times-circle"></i>
+            <span><strong>Tidak ada verifikasi dua arah</strong> — Informasi sensitif seharusnya hanya diakses melalui portal resmi yang sudah dikenal.</span>
+          </li>
+        </ul>
+
+        <div class="tips-card">
+          <strong>🔐 Tips Melindungi Diri dari Phishing:</strong><br/>
+          ✓ Selalu periksa URL sebelum memasukkan data login.<br/>
+          ✓ Jangan klik tautan mencurigakan dari email yang tidak dikenal.<br/>
+          ✓ Laporkan email mencurigakan ke tim IT/CSIRT melalui jalur resmi.<br/>
+          ✓ Gunakan Two-Factor Authentication (2FA) di semua akun kerja.<br/>
+          ✓ Jika ragu, selalu verifikasi langsung ke pengirim melalui channel resmi.
+        </div>
+
+      </div>
+
+      <div class="footnote">
+        Human Capital Services — Security Awareness Program 2026
+      </div>
+
+    </div>
+
+  </body></html>
